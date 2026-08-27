@@ -174,8 +174,8 @@ export default function Contacto() {
                   <h3>WhatsApp</h3>
                   <p>
                     Pedidos 24 hs. al <br />
-                    <a href="https://wa.me/5491137682644" target="_blank" rel="noopener noreferrer">
-                      +54 9 11 3768-2644
+                    <a href="https://wa.me/5491131608396" target="_blank" rel="noopener noreferrer">
+                      +54 9 11 3160-8396
                     </a>
                   </p>
                 </div>
