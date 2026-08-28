@@ -7,10 +7,15 @@ export default function Inicio() {
     <>
       {/* Hero Section */}
       <section className="hero-section">
-        <div className="hero-bg"></div>
+        <div className="hero-bg">
+          <video autoPlay loop muted playsInline className="hero-video">
+            <source src="/banner.mp4" type="video/mp4" />
+          </video>
+          <div className="hero-overlay"></div>
+        </div>
         <div className="container hero-content">
           <span className="section-tag">Tradición & Calidad Frigorífica</span>
-          <h1 className="hero-title">30 años de experiencia en el mercado de carnes</h1>
+          <h1 className="hero-title">Calidad y precio sin intermediarios</h1>
           <div className="hero-cta-wrap">
             <Link to="/quienes-somos" className="btn btn-primary">
               Conózcanos

@@ -22,7 +22,23 @@ export default function Contacto() {
     e.preventDefault();
     setLoading(true);
 
-    setTimeout(() => {
+    fetch("https://formsubmit.co/ajax/carnes.vacuum@gmail.com", {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+        Nombre: formData.nombre,
+        Apellido: formData.apellido,
+        Email: formData.email,
+        Teléfono: formData.telefono,
+        Mensaje: formData.mensaje,
+        _subject: "Nuevo contacto desde la web de VACUUM Carnicería"
+      })
+    })
+    .then(response => response.json())
+    .then(data => {
       setLoading(false);
       setSubmitted(true);
       setFormData({
@@ -33,7 +49,11 @@ export default function Contacto() {
         mensaje: ''
       });
       setTimeout(() => setSubmitted(false), 5000);
-    }, 1200);
+    })
+    .catch(error => {
+      console.error("Error enviando el formulario:", error);
+      setLoading(false);
+    });
   };
 
   return (
@@ -149,7 +169,7 @@ export default function Contacto() {
                 <button
                   type="submit"
                   className="btn btn-primary"
-                  style={{ width: '100%' }}
+                  style={{ width: '100%', marginTop: 'auto' }}
                   disabled={loading}
                 >
                   <Send size={18} />
@@ -166,7 +186,7 @@ export default function Contacto() {
               </div>
 
               {/* WhatsApp */}
-              <div className="info-item-card">
+              <a href="https://wa.me/5491126549565?text=Hola%20VACUUM%20Carnicer%C3%ADa%2C%20quisiera%20hacer%20un%20pedido%20o%20consulta." target="_blank" rel="noopener noreferrer" className="info-item-card">
                 <div className="info-icon-box whatsapp">
                   <WhatsAppIcon size={26} color="var(--color-whatsapp)" />
                 </div>
@@ -174,61 +194,43 @@ export default function Contacto() {
                   <h3>WhatsApp</h3>
                   <p>
                     Pedidos 24 hs. al <br />
-                    <a href="https://wa.me/5491131608396" target="_blank" rel="noopener noreferrer">
-                      +54 9 11 3160-8396
-                    </a>
+                    <span style={{ color: '#ffffff', fontWeight: 500 }}>+54 9 11 2654-9565</span>
                   </p>
                 </div>
-              </div>
-
-              {/* Telefono */}
-              <div className="info-item-card">
-                <div className="info-icon-box">
-                  <Phone size={24} />
-                </div>
-                <div className="info-content">
-                  <h3>Teléfono</h3>
-                  <p>
-                    Líneas rotativas: <br />
-                    <a href="tel:+541147536041">+54 (011) 4753 - 6041</a> / <a href="tel:+541147538081">8081</a>
-                  </p>
-                </div>
-              </div>
+              </a>
 
               {/* Email */}
-              <div className="info-item-card">
+              <a href="mailto:carnes.vacuum@gmail.com" className="info-item-card">
                 <div className="info-icon-box">
                   <Mail size={24} />
                 </div>
                 <div className="info-content">
                   <h3>Correo Electrónico</h3>
                   <p>
-                    <a href="mailto:admin@stockdecarnes.com">admin@stockdecarnes.com</a>
-                    <br />
-                    <a href="mailto:ganaderalasheras@gmail.com">ganaderalasheras@gmail.com</a>
+                    <span style={{ color: '#ffffff', fontWeight: 500 }}>carnes.vacuum@gmail.com</span>
                   </p>
                 </div>
-              </div>
+              </a>
 
               {/* Direccion */}
-              <div className="info-item-card">
+              <a href="https://www.google.com/maps/search/?api=1&query=Av.+Pres.+Perón+1747,+El+Palomar,+Buenos+Aires" target="_blank" rel="noopener noreferrer" className="info-item-card">
                 <div className="info-icon-box">
                   <MapPin size={24} />
                 </div>
                 <div className="info-content">
-                  <h3>Planta Frigorífica</h3>
+                  <h3>Dirección</h3>
                   <p>
-                    Calle 24 Buenos Aires Nº 4566/4658<br />
-                    Villa Lynch, San Martín, Buenos Aires
+                    Av. Pres. Perón 1747<br />
+                    B1706 El Palomar, Provincia de Buenos Aires
                   </p>
                 </div>
-              </div>
+              </a>
 
               {/* Map Preview */}
               <div className="map-wrap">
                 <iframe
                   title="Ubicación VACUUM Carnicería"
-                  src="https://maps.google.com/maps?q=Calle%2024%20Buenos%20Aires%204566,%20Villa%20Lynch,%20San%20Martin,%20Buenos%20Aires&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  src="https://maps.google.com/maps?q=Av.%20Pres.%20Per%C3%B3n%201747,%20B1706%20El%20Palomar,%20Provincia%20de%20Buenos%20Aires&t=&z=15&ie=UTF8&iwloc=&output=embed"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>

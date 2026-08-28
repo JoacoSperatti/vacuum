@@ -307,17 +307,29 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(180deg, rgba(13, 14, 17, 0.65) 0%, rgba(13, 14, 17, 0.88) 70%, var(--color-bg) 100%), url('/assets/images/hero-banner.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: brightness(0.95);
   z-index: 1;
+  overflow: hidden;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, rgba(13, 14, 17, 0.65) 0%, rgba(13, 14, 17, 0.88) 70%, var(--color-bg) 100%);
+  z-index: 2;
 }
 
 .hero-content {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   text-align: center;
   max-width: 920px;
   padding: 4.5rem 1.25rem;
@@ -579,10 +591,12 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-.full-banner-wrap img {
+.full-banner-wrap img,
+.full-banner-wrap video {
   width: 100%;
   height: 500px;
   object-fit: cover;
+  display: block;
 }
 
 .values-grid {
@@ -722,13 +736,16 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: var(--shadow-lg);
   border: 1px solid var(--color-border);
   position: relative;
-  height: 440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .split-media img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
+  max-height: 600px;
 }
 
 .split-text h2 {
@@ -766,7 +783,7 @@ h1, h2, h3, h4, h5, h6 {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   gap: 3.5rem;
-  align-items: start;
+  align-items: stretch;
 }
 
 .contact-form-card {
@@ -775,6 +792,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: var(--border-radius-lg);
   padding: 3.2rem;
   box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-form-card h2 {
@@ -788,8 +807,24 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
 }
 
+.contact-form-card form {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
 .form-group {
   margin-bottom: 1.5rem;
+}
+
+.form-group:nth-last-of-type(1) {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group:nth-last-of-type(1) textarea {
+  flex-grow: 1;
 }
 
 .form-row {

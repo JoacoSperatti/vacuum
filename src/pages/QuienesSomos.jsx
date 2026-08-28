@@ -10,7 +10,7 @@ export default function QuienesSomos() {
           <span className="section-tag">Conocé nuestra historia</span>
           <h1 className="page-hero-title">¿Quiénes somos?</h1>
           <p className="page-hero-lead">
-            Más de tres décadas de dedicación, pasión frigorífica y servicio integral a la gastronomía.
+            Más de tres generaciones de dedicación, pasión frigorífica y servicio integral.
           </p>
         </div>
       </header>
@@ -23,7 +23,7 @@ export default function QuienesSomos() {
             <article className="about-card-featured">
               <h2>Nuestra Trayectoria</h2>
               <p>
-                Somos una empresa con más de 30 años de experiencia en el mercado de carnes y al servicio de la gastronomía. Nuestra planta frigorífica se encuentra ubicada en Villa Lynch, partido de San Martín, Provincia de Buenos Aires.
+                Somos una empresa familiar con más de 30 años de experiencia en el mercado de las carnes . nuestra planta frigorífica se encuentra ubicada en junín provincia de buenas aires.
               </p>
               <p>
                 Allí, garantizamos las mejores prácticas de seguridad alimentaria, cumpliendo con los estándares requeridos en materia de calidad e higiene en todo el circuito productivo —desde el ingreso de materias primas, su tratamiento, fraccionamiento y envasado— hasta su posterior traslado.
@@ -32,12 +32,17 @@ export default function QuienesSomos() {
 
             {/* Large Image Banner */}
             <div className="full-banner-wrap">
-              <img
-                src="/assets/images/quienes-somos-banner.jpg"
-                alt="Instalaciones y equipo de VACUUM Carnicería"
-                loading="lazy"
+              <video 
+                src="/2.mp4" 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+                title="Instalaciones y equipo de VACUUM Carnicería"
               />
             </div>
+
+
 
             {/* Featured Card 2 */}
             <article className="about-card-featured">

@@ -11,30 +11,23 @@ export default function Footer() {
           <div className="footer-contact-list">
             <div className="footer-contact-item">
               <MapPin size={22} className="footer-icon" />
-              <span>Calle 24 Buenos Aires Nº 4566/4658 - Villa Lynch - San Martín - Buenos Aires</span>
+              <span>Av. Pres. Perón 1747, B1706 El Palomar, Provincia de Buenos Aires</span>
             </div>
 
             <div className="footer-contact-item">
-              <WhatsAppIcon size={22} color="var(--color-whatsapp)" />
+              <WhatsAppIcon size={22} className="footer-icon" />
               <span>
                 Pedidos 24 hs{' '}
-                <a href="https://wa.me/5491131608396" target="_blank" rel="noopener noreferrer">
-                  +54 9 11 3160-8396
+                <a href="https://wa.me/5491126549565" target="_blank" rel="noopener noreferrer">
+                  +54 9 11 2654-9565
                 </a>
-              </span>
-            </div>
-
-            <div className="footer-contact-item">
-              <Phone size={22} className="footer-icon" />
-              <span>
-                Rotativas <a href="tel:+541147536041">4753-6041</a> / <a href="tel:+541147538081">8081</a>
               </span>
             </div>
 
             <div className="footer-contact-item">
               <Mail size={22} className="footer-icon" />
               <span>
-                <a href="mailto:admin@stockdecarnes.com">admin@stockdecarnes.com</a>
+                <a href="mailto:carnes.vacuum@gmail.com">carnes.vacuum@gmail.com</a>
               </span>
             </div>
           </div>

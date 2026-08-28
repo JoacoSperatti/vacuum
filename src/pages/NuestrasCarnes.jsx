@@ -86,7 +86,7 @@ export default function NuestrasCarnes() {
         <div className="container">
           <div className="split-grid">
             <div className="split-media">
-              <img src="/assets/images/ojo-de-bife.jpg" alt="Ojo de bife envasado al vacío" loading="lazy" />
+              <img src="/3.jpeg" alt="Carne envasada al vacío" loading="lazy" />
             </div>
             <div className="split-text">
               <span className="section-tag">Maduración & Conservación</span>
@@ -110,7 +110,7 @@ export default function NuestrasCarnes() {
         <div className="container">
           <div className="split-grid reverse">
             <div className="split-media">
-              <img src="/assets/images/pollo-cubeteado.jpg" alt="Corte y manipulación correcta de la carne" loading="lazy" />
+              <img src="/4.jpeg" alt="Corte y manipulación correcta de la carne" loading="lazy" />
             </div>
             <div className="split-text">
               <span className="section-tag">Consejos Útiles</span>
