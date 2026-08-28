@@ -1,14 +1,17 @@
 import React from 'react';
 import { Award, Scissors, ShieldAlert, Truck } from 'lucide-react';
+import { useSEO } from '../hooks/useSEO.js';
 
 export default function QuienesSomos() {
+  useSEO("Quiénes Somos | VACUUM Carnicería", "Conozca la historia de VACUUM Carnicería. Más de 30 años de experiencia y tradición frigorífica asegurando calidad y seguridad alimentaria.");
   return (
     <>
       {/* Page Hero */}
       <header className="page-hero">
         <div className="container">
           <span className="section-tag">Conocé nuestra historia</span>
-          <h1 className="page-hero-title">¿Quiénes somos?</h1>
+          <h1 className="sr-only">Quiénes Somos - Frigorífico VACUUM Carnicería</h1>
+          <h2 className="page-hero-title">¿Quiénes somos?</h2>
           <p className="page-hero-lead">
             Más de tres generaciones de dedicación, pasión frigorífica y servicio integral.
           </p>

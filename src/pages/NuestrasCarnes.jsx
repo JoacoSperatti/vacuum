@@ -1,7 +1,9 @@
 import React from 'react';
 import { Beef, Feather, Sparkles } from 'lucide-react';
+import { useSEO } from '../hooks/useSEO.js';
 
 export default function NuestrasCarnes() {
+  useSEO("Nuestras Carnes Envasadas al Vacío | VACUUM Carnicería", "Descubra nuestra selección de cortes vacunos, aves y cerdo. Carnes frescas envasadas al vacío que garantizan terneza, higiene y durabilidad.");
   return (
     <>
       {/* Page Hero Banner */}
@@ -11,7 +13,8 @@ export default function NuestrasCarnes() {
       >
         <div className="page-hero-content">
           <span className="section-tag">Variedad & Excelencia</span>
-          <h1 className="page-hero-title">Nuestras carnes</h1>
+          <h1 className="sr-only">Nuestras Carnes: Cortes Vacunos, Aves y Cerdo Envasados al Vacío</h1>
+          <h2 className="page-hero-title">Nuestras carnes</h2>
           <p className="page-hero-lead">
             Conozca nuestros productos seleccionados y la tecnología de envasado al vacío
           </p>

@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ShieldCheck, Package, Clock, Truck } from 'lucide-react';
+import { useSEO } from '../hooks/useSEO.js';
 
 export default function Inicio() {
+  useSEO("VACUUM Carnicería | Calidad y Tradición Frigorífica", "VACUUM Carnicería: 30 años de experiencia en el mercado de carnes y al servicio de la gastronomía. Cortes envasados al vacío con máxima calidad.");
   return (
     <>
       {/* Hero Section */}
@@ -15,7 +17,8 @@ export default function Inicio() {
         </div>
         <div className="container hero-content">
           <span className="section-tag">Tradición & Calidad Frigorífica</span>
-          <h1 className="hero-title">Calidad y precio sin intermediarios</h1>
+          <h1 className="sr-only">VACUUM Carnicería: Venta de carne envasada al vacío directo de frigorífico</h1>
+          <h2 className="hero-title">Calidad y precio sin intermediarios</h2>
           <div className="hero-cta-wrap">
             <Link to="/quienes-somos" className="btn btn-primary">
               Conózcanos

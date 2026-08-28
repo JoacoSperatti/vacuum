@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import WhatsAppIcon from '../components/WhatsAppIcon.jsx';
 import { Phone, Mail, MapPin, Send, CheckCircle2 } from 'lucide-react';
+import { useSEO } from '../hooks/useSEO.js';
 
 export default function Contacto() {
+  useSEO("Contacto | VACUUM Carnicería", "Comuníquese con VACUUM Carnicería para pedidos, consultas sobre envíos o asesoramiento gastronómico. Atención 24 hs.");
   const [formData, setFormData] = useState({
     nombre: '',
     apellido: '',
@@ -62,7 +64,8 @@ export default function Contacto() {
       <header className="page-hero">
         <div className="container">
           <span className="section-tag">Atención Personalizada</span>
-          <h1 className="page-hero-title">Contacto</h1>
+          <h1 className="sr-only">Contacto - VACUUM Carnicería y Venta Directa</h1>
+          <h2 className="page-hero-title">Contacto</h2>
           <p className="page-hero-lead">
             En VACUUM Carnicería su satisfacción es nuestra máxima prioridad. Escríbanos o comuníquese por nuestros canales directos.
           </p>
