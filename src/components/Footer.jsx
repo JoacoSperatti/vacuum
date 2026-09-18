@@ -47,8 +47,13 @@ export default function Footer() {
               </li>
               <li><Link to="/contacto">Contacto</Link></li>
               <li>
-                <a href="/lista-de-precios-mayorista-vacuum.pdf" download="Lista_De_Precios_Mayorista_Vacuum.pdf">
-                  Descargar Lista PDF
+                <a href="/lista-de-precios-mayorista-vacuum.pdf" download="Lista_De_Precios_Achuras_Vacuum.pdf">
+                  PDF Precios Achuras
+                </a>
+              </li>
+              <li>
+                <a href="/lista-de-precios-cerdo-vacuum.pdf" download="Lista_De_Precios_Cerdo_Vacuum.pdf">
+                  PDF Precios Cerdo
                 </a>
               </li>
             </ul>

@@ -18,8 +18,8 @@ export default function ListaDePrecios() {
   const structuredSchema = useMemo(() => ({
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    'name': 'Lista de Precios Mayorista de Achuras y Menudencias - VACUUM Carnicería',
-    'description': 'Precios mayoristas oficiales de achuras, menudencias vacunas y cortes especiales de VACUUM Carnicería en Buenos Aires.',
+    'name': 'Lista de Precios Mayorista de Achuras, Cerdo y Menudencias - VACUUM Carnicería',
+    'description': 'Precios mayoristas oficiales de achuras, carne porcina (cerdo), menudencias vacunas y cortes especiales de VACUUM Carnicería en Buenos Aires.',
     'numberOfItems': listaPreciosMayoristas.length,
     'itemListElement': listaPreciosMayoristas.map((item, index) => ({
       '@type': 'ListItem',
@@ -59,9 +59,9 @@ export default function ListaDePrecios() {
 
   // SEO Hook
   useSEO({
-    title: 'Lista de Precios Mayorista de Achuras y Menudencias | VACUUM Carnicería',
-    description: 'Consulte la lista de precios mayoristas de achuras, menudencias vacunas y cortes especiales de VACUUM Carnicería. Mollejas, chinchulines, lengua y riñón al mejor precio directo de frigorífico en Buenos Aires.',
-    keywords: 'lista de precios carnicería, precios mayoristas achuras, molleja por mayor precio, chinchulin precio mayorista, achuras buenos aires, frigorifico el palomar, menudencias vacunas precios, vacuum carniceria precios, carne al vacio mayorista',
+    title: 'Lista de Precios Mayorista | Achuras, Cerdo y Menudencias | VACUUM Carnicería',
+    description: 'Consulte la lista de precios mayoristas de achuras, carne porcina (cerdo), menudencias vacunas y cortes especiales de VACUUM Carnicería. Pechito de cerdo, bondiola, vacío, matambre, mollejas y chinchulines directo de frigorífico en Buenos Aires.',
+    keywords: 'lista de precios carnicería, precios mayoristas cerdo, pechito de cerdo precio, bondiola mayorista, vacio de cerdo precio, chorizos de cerdo mayorista, matambre cerdo, precios mayoristas achuras, molleja por mayor precio, chinchulin precio mayorista, vacuum carniceria precios',
     canonical: 'https://vacuumcarniceria.com.ar/lista-de-precios',
     schema: structuredSchema
   });
@@ -101,7 +101,7 @@ export default function ListaDePrecios() {
   };
 
   const globalWhatsAppUrl = `https://wa.me/5491126549565?text=${encodeURIComponent(
-    'Hola VACUUM Carnicería, quisiera recibir asesoramiento y hacer un pedido mayorista con la lista de precios de achuras y menudencias.'
+    'Hola VACUUM Carnicería, quisiera recibir asesoramiento y hacer un pedido mayorista con la lista de precios oficial.'
   )}`;
 
   return (
@@ -110,17 +110,30 @@ export default function ListaDePrecios() {
       <header className="page-hero pricing-hero">
         <div className="container">
           <span className="section-tag">Venta Mayorista Directa</span>
-          <h1 className="page-hero-title">Lista de Precios de Achuras</h1>
+          <h1 className="page-hero-title">Lista de Precios Mayoristas</h1>
+          <p className="page-hero-subtitle" style={{ color: 'var(--color-text-muted)', fontSize: '1.05rem', marginTop: '0.6rem', maxWidth: '660px', marginInline: 'auto' }}>
+            Achuras, menudencias vacunas y cortes de carne porcina seleccionados con calidad frigorífica
+          </p>
 
           <div className="pricing-hero-actions">
             <a 
               href="/lista-de-precios-mayorista-vacuum.pdf" 
-              download="Lista_De_Precios_Mayorista_Vacuum.pdf" 
+              download="Lista_De_Precios_Achuras_Vacuum.pdf" 
               className="btn btn-primary"
-              title="Descargar lista oficial en PDF"
+              title="Descargar lista oficial de Achuras en PDF"
             >
-              <Download size={20} />
-              Descargar Lista en PDF
+              <Download size={18} />
+              PDF Achuras
+            </a>
+
+            <a 
+              href="/lista-de-precios-cerdo-vacuum.pdf" 
+              download="Lista_De_Precios_Cerdo_Vacuum.pdf" 
+              className="btn btn-outline"
+              title="Descargar lista oficial de Cerdo en PDF"
+            >
+              <Download size={18} />
+              PDF Cerdo
             </a>
 
             <a 
@@ -130,7 +143,7 @@ export default function ListaDePrecios() {
               className="btn btn-whatsapp"
               title="Contactar ventas mayoristas"
             >
-              <WhatsAppIcon size={20} color="#ffffff" />
+              <WhatsAppIcon size={18} color="#ffffff" />
               Pedir por WhatsApp 24 hs
             </a>
           </div>
@@ -149,7 +162,7 @@ export default function ListaDePrecios() {
                 <Search size={18} className="search-icon" />
                 <input
                   type="text"
-                  placeholder="Buscar achura, corte o menudencia (ej. Molleja, Lengua)..."
+                  placeholder="Buscar achura, cerdo, corte o menudencia (ej. Bondiola, Pechito, Molleja)..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                   className="search-input"
@@ -358,7 +371,7 @@ export default function ListaDePrecios() {
           <div className="pricing-cta-banner">
             <div className="cta-banner-content">
               <span className="section-tag">¿Es dueño de una parrilla, restaurante o carnicería?</span>
-              <h2>Optimice el costo de su negocio con carne y achuras de primera calidad</h2>
+              <h2>Optimice el costo de su negocio con carne, cerdo y achuras de primera calidad</h2>
               <p>
                 Consulte por pedidos semanales, planes de abastecimiento gastronómico continuo y bonificaciones por volumen.
               </p>
@@ -374,11 +387,19 @@ export default function ListaDePrecios() {
                 </a>
                 <a 
                   href="/lista-de-precios-mayorista-vacuum.pdf" 
-                  download="Lista_De_Precios_Mayorista_Vacuum.pdf"
+                  download="Lista_De_Precios_Achuras_Vacuum.pdf" 
                   className="btn btn-outline"
                 >
-                  <Download size={20} />
-                  Descargar Lista PDF
+                  <Download size={18} />
+                  PDF Achuras
+                </a>
+                <a 
+                  href="/lista-de-precios-cerdo-vacuum.pdf" 
+                  download="Lista_De_Precios_Cerdo_Vacuum.pdf" 
+                  className="btn btn-outline"
+                >
+                  <Download size={18} />
+                  PDF Cerdo
                 </a>
               </div>
             </div>

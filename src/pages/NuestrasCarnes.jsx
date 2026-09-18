@@ -144,9 +144,9 @@ export default function NuestrasCarnes() {
           <div className="pricing-cta-banner">
             <div className="cta-banner-content">
               <span className="section-tag">Venta Mayorista & Gastronomía</span>
-              <h2>¿Busca achuras, menudencias y cortes por volumen?</h2>
+              <h2>¿Busca achuras, carne porcina y cortes por volumen?</h2>
               <p>
-                Acceda a nuestra lista de precios mayorista de achuras: mollejas, chinchulín, lengua, riñón, carne chica y especialidades con logística garantizada.
+                Acceda a nuestra lista de precios mayorista: cortes de cerdo, mollejas, chinchulín, lengua, bondiola, vacío de cerdo y especialidades con logística garantizada.
               </p>
               <div className="cta-buttons-wrap">
                 <Link to="/lista-de-precios" className="btn btn-primary">
@@ -155,11 +155,19 @@ export default function NuestrasCarnes() {
                 </Link>
                 <a 
                   href="/lista-de-precios-mayorista-vacuum.pdf" 
-                  download="Lista_De_Precios_Mayorista_Vacuum.pdf"
+                  download="Lista_De_Precios_Achuras_Vacuum.pdf"
                   className="btn btn-outline"
                 >
                   <Download size={18} />
-                  Descargar PDF Oficial
+                  PDF Achuras
+                </a>
+                <a 
+                  href="/lista-de-precios-cerdo-vacuum.pdf" 
+                  download="Lista_De_Precios_Cerdo_Vacuum.pdf"
+                  className="btn btn-outline"
+                >
+                  <Download size={18} />
+                  PDF Cerdo
                 </a>
               </div>
             </div>

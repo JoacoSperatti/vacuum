@@ -143,7 +143,7 @@ export default function Inicio() {
           <div className="showcase-action-center" style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <Link to="/lista-de-precios" className="btn btn-primary">
               <Sparkles size={18} />
-              Ver Lista de Precios de Achuras
+              Ver Lista de Precios Mayoristas
             </Link>
             <Link to="/nuestras-carnes" className="btn btn-outline">
               Conocer Todos los Cortes
@@ -158,9 +158,9 @@ export default function Inicio() {
           <div className="pricing-cta-banner">
             <div className="cta-banner-content">
               <span className="section-tag">Venta Mayorista Directa</span>
-              <h2>¿Busca Achuras y Menudencias al por Mayor?</h2>
+              <h2>¿Busca Achuras, Cerdo y Cortes al por Mayor?</h2>
               <p>
-                Disponemos de lista de precios mayorista actualizada para restaurantes, parrillas, carnicerías y eventos. Chinchulín, mollejas, riñón, lengua y cortes especiales con entrega en toda la zona.
+                Disponemos de lista de precios mayorista actualizada para restaurantes, parrillas, carnicerías y eventos. Cortes de cerdo, achuras vacunas, mollejas, bondiola y especialidades con entrega en toda la zona.
               </p>
               <div className="cta-buttons-wrap">
                 <Link to="/lista-de-precios" className="btn btn-primary">
@@ -168,11 +168,19 @@ export default function Inicio() {
                 </Link>
                 <a 
                   href="/lista-de-precios-mayorista-vacuum.pdf" 
-                  download="Lista_De_Precios_Mayorista_Vacuum.pdf"
+                  download="Lista_De_Precios_Achuras_Vacuum.pdf"
                   className="btn btn-outline"
                 >
                   <Download size={18} />
-                  Descargar Lista en PDF
+                  PDF Achuras
+                </a>
+                <a 
+                  href="/lista-de-precios-cerdo-vacuum.pdf" 
+                  download="Lista_De_Precios_Cerdo_Vacuum.pdf"
+                  className="btn btn-outline"
+                >
+                  <Download size={18} />
+                  PDF Cerdo
                 </a>
               </div>
             </div>
