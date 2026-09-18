@@ -3,7 +3,12 @@ import { Award, Scissors, ShieldAlert, Truck } from 'lucide-react';
 import { useSEO } from '../hooks/useSEO.js';
 
 export default function QuienesSomos() {
-  useSEO("Quiénes Somos | VACUUM Carnicería", "Conozca la historia de VACUUM Carnicería. Más de 30 años de experiencia y tradición frigorífica asegurando calidad y seguridad alimentaria.");
+  useSEO({
+    title: 'Quiénes Somos | VACUUM Carnicería - Tradición Frigorífica',
+    description: 'Conozca la historia de VACUUM Carnicería: más de 30 años de experiencia frigorífica en Junín y El Palomar. Calidad, higiene y envasado al vacío.',
+    keywords: 'frigorifico junin, carniceria el palomar, historia vacuum carniceria, distribucion de carne buenos aires, envasado al vacio historia',
+    canonical: 'https://vacuumcarniceria.com.ar/quienes-somos'
+  });
   return (
     <>
       {/* Page Hero */}

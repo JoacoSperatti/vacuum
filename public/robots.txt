@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
 
+# Sitemap
 Sitemap: https://vacuumcarniceria.com.ar/sitemap.xml
+Host: https://vacuumcarniceria.com.ar

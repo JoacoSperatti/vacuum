@@ -1,9 +1,15 @@
 import React from 'react';
-import { Beef, Feather, Sparkles } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Beef, Feather, Sparkles, Download, FileText } from 'lucide-react';
 import { useSEO } from '../hooks/useSEO.js';
 
 export default function NuestrasCarnes() {
-  useSEO("Nuestras Carnes Envasadas al Vacío | VACUUM Carnicería", "Descubra nuestra selección de cortes vacunos, aves y cerdo. Carnes frescas envasadas al vacío que garantizan terneza, higiene y durabilidad.");
+  useSEO({
+    title: 'Nuestras Carnes Envasadas al Vacío y Achuras | VACUUM Carnicería',
+    description: 'Descubra nuestra selección de cortes vacunos, aves y cerdo. Carnes frescas envasadas al vacío y lista de precios mayorista de achuras para gastronomía en Buenos Aires.',
+    keywords: 'carnes al vacio, cortes vacunos argentina, carne de novillo, cerdo, aves de granja, achuras mayoristas, mollejas, chinchulin, vacuum carniceria',
+    canonical: 'https://vacuumcarniceria.com.ar/nuestras-carnes'
+  });
   return (
     <>
       {/* Page Hero Banner */}
@@ -126,6 +132,35 @@ export default function NuestrasCarnes() {
                 <p>
                   <strong>Nunca descongele la carne en el microondas</strong>, con agua caliente o directamente en el fuego, ya que perderá su calidad original de terneza, jugosidad y sabor.
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Wholesale Callout Banner */}
+      <section style={{ padding: '4rem 0 6rem 0' }}>
+        <div className="container">
+          <div className="pricing-cta-banner">
+            <div className="cta-banner-content">
+              <span className="section-tag">Venta Mayorista & Gastronomía</span>
+              <h2>¿Busca achuras, menudencias y cortes por volumen?</h2>
+              <p>
+                Acceda a nuestra lista de precios mayorista de achuras: mollejas, chinchulín, lengua, riñón, carne chica y especialidades con logística garantizada.
+              </p>
+              <div className="cta-buttons-wrap">
+                <Link to="/lista-de-precios" className="btn btn-primary">
+                  <FileText size={18} />
+                  Ver Lista de Precios Mayorista
+                </Link>
+                <a 
+                  href="/lista-de-precios-mayorista-vacuum.pdf" 
+                  download="Lista_De_Precios_Mayorista_Vacuum.pdf"
+                  className="btn btn-outline"
+                >
+                  <Download size={18} />
+                  Descargar PDF Oficial
+                </a>
               </div>
             </div>
           </div>

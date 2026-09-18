@@ -1,10 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShieldCheck, Package, Clock, Truck } from 'lucide-react';
+import { ShieldCheck, Package, Clock, Truck, Download, Sparkles } from 'lucide-react';
 import { useSEO } from '../hooks/useSEO.js';
 
 export default function Inicio() {
-  useSEO("VACUUM Carnicería | Calidad y Tradición Frigorífica", "VACUUM Carnicería: 30 años de experiencia en el mercado de carnes y al servicio de la gastronomía. Cortes envasados al vacío con máxima calidad.");
+  useSEO({
+    title: 'VACUUM Carnicería | Calidad y Tradición Frigorífica en Buenos Aires',
+    description: 'VACUUM Carnicería: más de 30 años de experiencia frigorífica. Cortes vacunos, porcinos, aves y lista de precios mayorista de achuras envasadas al vacío en El Palomar.',
+    keywords: 'carnicería el palomar, carne al vacío buenos aires, frigorífico venta mayorista, achuras precios, chinchulin mayorista, mollejas vacunas, cortes de carne premium, vacuum carniceria',
+    canonical: 'https://vacuumcarniceria.com.ar/'
+  });
   return (
     <>
       {/* Hero Section */}
@@ -20,8 +25,11 @@ export default function Inicio() {
           <h1 className="sr-only">VACUUM Carnicería: Venta de carne envasada al vacío directo de frigorífico</h1>
           <h2 className="hero-title">Calidad y precio sin intermediarios</h2>
           <div className="hero-cta-wrap">
-            <Link to="/quienes-somos" className="btn btn-primary">
-              Conózcanos
+            <Link to="/lista-de-precios" className="btn btn-primary">
+              Lista de Precios
+            </Link>
+            <Link to="/nuestras-carnes" className="btn btn-outline">
+              Nuestras Carnes
             </Link>
             <Link to="/contacto" className="btn btn-outline">
               Hacer Pedido
@@ -132,10 +140,42 @@ export default function Inicio() {
             </div>
           </div>
 
-          <div className="showcase-action-center">
-            <Link to="/nuestras-carnes" className="btn btn-primary">
-              Saber más
+          <div className="showcase-action-center" style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <Link to="/lista-de-precios" className="btn btn-primary">
+              <Sparkles size={18} />
+              Ver Lista de Precios de Achuras
             </Link>
+            <Link to="/nuestras-carnes" className="btn btn-outline">
+              Conocer Todos los Cortes
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Wholesale Highlight Section */}
+      <section style={{ padding: '3rem 0 5rem 0' }}>
+        <div className="container">
+          <div className="pricing-cta-banner">
+            <div className="cta-banner-content">
+              <span className="section-tag">Venta Mayorista Directa</span>
+              <h2>¿Busca Achuras y Menudencias al por Mayor?</h2>
+              <p>
+                Disponemos de lista de precios mayorista actualizada para restaurantes, parrillas, carnicerías y eventos. Chinchulín, mollejas, riñón, lengua y cortes especiales con entrega en toda la zona.
+              </p>
+              <div className="cta-buttons-wrap">
+                <Link to="/lista-de-precios" className="btn btn-primary">
+                  Consultar Precios Online
+                </Link>
+                <a 
+                  href="/lista-de-precios-mayorista-vacuum.pdf" 
+                  download="Lista_De_Precios_Mayorista_Vacuum.pdf"
+                  className="btn btn-outline"
+                >
+                  <Download size={18} />
+                  Descargar Lista en PDF
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

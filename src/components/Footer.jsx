@@ -1,5 +1,6 @@
 import React from 'react';
-import { MapPin, Phone, Mail } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { MapPin, Phone, Mail, FileText } from 'lucide-react';
 import WhatsAppIcon from './WhatsAppIcon.jsx';
 
 export default function Footer() {
@@ -30,6 +31,27 @@ export default function Footer() {
                 <a href="mailto:carnes.vacuum@gmail.com">carnes.vacuum@gmail.com</a>
               </span>
             </div>
+          </div>
+
+          {/* Quick Navigation Links */}
+          <div className="footer-links-column">
+            <h4 className="footer-column-title">Navegación</h4>
+            <ul className="footer-links-list">
+              <li><Link to="/">Inicio</Link></li>
+              <li><Link to="/quienes-somos">¿Quiénes somos?</Link></li>
+              <li><Link to="/nuestras-carnes">Nuestras carnes</Link></li>
+              <li>
+                <Link to="/lista-de-precios">
+                  Lista de Precios
+                </Link>
+              </li>
+              <li><Link to="/contacto">Contacto</Link></li>
+              <li>
+                <a href="/lista-de-precios-mayorista-vacuum.pdf" download="Lista_De_Precios_Mayorista_Vacuum.pdf">
+                  Descargar Lista PDF
+                </a>
+              </li>
+            </ul>
           </div>
 
           {/* Brand Column */}

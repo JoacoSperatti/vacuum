@@ -3,35 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VACUUM Carnicería | Calidad y Tradición Frigorífica</title>
-    <meta name="description" content="VACUUM Carnicería: 30 años de experiencia en el mercado de carnes y al servicio de la gastronomía. Cortes envasados al vacío con máxima calidad." />
+    <title>VACUUM Carnicería | Calidad Frigorífica y Lista de Precios Mayorista</title>
+    <meta name="description" content="VACUUM Carnicería: más de 30 años de trayectoria frigorífica. Cortes vacunos, porcinos, aves y lista de precios mayorista de achuras envasadas al vacío en El Palomar, Buenos Aires." />
     
-    <!-- Favicon -->
+    <!-- Theme & App Mobile -->
+    <meta name="theme-color" content="#0d0e11" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- Favicons -->
     <link rel="icon" type="image/jpeg" href="/favicon (2).jpg" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/favicon (2).jpg" />
     
-    <!-- Open Graph -->
-    <meta property="og:title" content="VACUUM Carnicería | Calidad y Tradición Frigorífica" />
-    <meta property="og:description" content="Cortes vacunos de res, aves de granja y carne de cerdo envasada al vacío." />
-    <meta property="og:image" content="/assets/images/logo.jpg" />
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="VACUUM Carnicería" />
+    <meta property="og:locale" content="es_AR" />
+    <meta property="og:title" content="VACUUM Carnicería | Calidad Frigorífica y Precios Mayoristas" />
+    <meta property="og:description" content="Cortes vacunos de res, aves, cerdo y lista de precios mayorista de achuras envasadas al vacío." />
+    <meta property="og:image" content="https://vacuumcarniceria.com.ar/assets/images/logo.jpg" />
+    <meta property="og:image:alt" content="Logo de VACUUM Carnicería" />
     <meta property="og:url" content="https://vacuumcarniceria.com.ar/" />
 
-    <!-- SEO & Keywords -->
-    <meta name="keywords" content="carnicería, venta de carne, carne al vacío, cortes vacunos, frigorífico, El Palomar, Buenos Aires, carne de cerdo, aves de granja, gastronomía, carne envasada al vacío" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="VACUUM Carnicería | Calidad Frigorífica y Precios Mayoristas" />
+    <meta name="twitter:description" content="Cortes vacunos, cerdo, aves y lista oficial de precios mayoristas de achuras envasadas al vacío." />
+    <meta name="twitter:image" content="https://vacuumcarniceria.com.ar/assets/images/logo.jpg" />
+
+    <!-- Local SEO & Geo Tags -->
+    <meta name="geo.region" content="AR-B" />
+    <meta name="geo.placename" content="El Palomar, Buenos Aires, Argentina" />
+    <meta name="geo.position" content="-34.6067;-58.5888" />
+    <meta name="ICBM" content="-34.6067, -58.5888" />
+
+    <!-- SEO & Indexing -->
+    <meta name="keywords" content="carnicería, precios mayoristas achuras, venta de carne, carne al vacío, cortes vacunos, mollejas por mayor, chinchulin mayorista, lengua vacuna, frigorífico, El Palomar, Morón, Buenos Aires, carne de cerdo, aves de granja, gastronomía, carne envasada al vacío" />
     <meta name="author" content="VACUUM Carnicería" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <link rel="canonical" href="https://vacuumcarniceria.com.ar/" />
 
-    <!-- Structured Data -->
+    <!-- Font Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Structured Data (Schema.org LocalBusiness + WholesaleStore) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
+      "@type": ["LocalBusiness", "WholesaleStore"],
       "name": "VACUUM Carnicería",
       "image": "https://vacuumcarniceria.com.ar/assets/images/logo.jpg",
-      "description": "VACUUM Carnicería: 30 años de experiencia en el mercado de carnes y al servicio de la gastronomía. Cortes envasados al vacío con máxima calidad.",
+      "description": "VACUUM Carnicería: más de 30 años de experiencia en el mercado de carnes y al servicio de la gastronomía. Cortes envasados al vacío con máxima calidad y lista de precios mayorista de achuras.",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Av. Pres. Perón 1747",
@@ -40,10 +65,41 @@
         "postalCode": "B1706",
         "addressCountry": "AR"
       },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -34.6067,
+        "longitude": -58.5888
+      },
       "telephone": "+5491126549565",
       "email": "carnes.vacuum@gmail.com",
       "url": "https://vacuumcarniceria.com.ar/",
-      "priceRange": "$$"
+      "priceRange": "$$",
+      "currenciesAccepted": "ARS",
+      "paymentAccepted": "Efectivo, Transferencia, Tarjetas",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Catálogo Mayorista VACUUM Carnicería",
+        "itemListElement": [
+          {
+            "@type": "OfferCatalog",
+            "name": "Achuras y Menudencias al por Mayor",
+            "url": "https://vacuumcarniceria.com.ar/lista-de-precios"
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Cortes Vacunos Envasados al Vacío",
+            "url": "https://vacuumcarniceria.com.ar/nuestras-carnes"
+          }
+        ]
+      }
     }
     </script>
   </head>

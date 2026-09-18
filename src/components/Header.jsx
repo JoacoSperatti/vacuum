@@ -45,6 +45,9 @@ export default function Header() {
           <NavLink to="/nuestras-carnes" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} onClick={closeMenu}>
             Nuestras carnes
           </NavLink>
+          <NavLink to="/lista-de-precios" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} onClick={closeMenu}>
+            Lista de Precios
+          </NavLink>
           <NavLink to="/contacto" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} onClick={closeMenu}>
             Contacto
           </NavLink>

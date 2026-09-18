@@ -4,7 +4,12 @@ import { Phone, Mail, MapPin, Send, CheckCircle2 } from 'lucide-react';
 import { useSEO } from '../hooks/useSEO.js';
 
 export default function Contacto() {
-  useSEO("Contacto | VACUUM Carnicería", "Comuníquese con VACUUM Carnicería para pedidos, consultas sobre envíos o asesoramiento gastronómico. Atención 24 hs.");
+  useSEO({
+    title: 'Contacto y Pedidos Mayoristas | VACUUM Carnicería',
+    description: 'Comuníquese con VACUUM Carnicería para pedidos minoristas y cotizaciones mayoristas de achuras y cortes al vacío. Atención 24 hs en El Palomar, Buenos Aires.',
+    keywords: 'pedidos carniceria, contacto frigorifico vacuum, telefono vacuum carniceria, pedidos carne whatsapp, atencion gastronomia carnes',
+    canonical: 'https://vacuumcarniceria.com.ar/contacto'
+  });
   const [formData, setFormData] = useState({
     nombre: '',
     apellido: '',
