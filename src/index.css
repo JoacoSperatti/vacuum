@@ -1895,4 +1895,36 @@ textarea.form-control {
   }
 }
 
+/* ── Media Res Badges ─────────────────────────────────────────────── */
+.animal-type-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.2em 0.55em;
+  border-radius: var(--border-radius-sm);
+  background: rgba(224, 36, 47, 0.15);
+  color: var(--color-primary);
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.product-peso-rango {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--color-text-dim);
+  font-weight: 500;
+  margin-top: 0.15rem;
+}
+
+.product-title-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+
 

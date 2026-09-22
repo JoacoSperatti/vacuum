@@ -59,9 +59,9 @@ export default function ListaDePrecios() {
 
   // SEO Hook
   useSEO({
-    title: 'Lista de Precios Mayorista | Achuras, Cerdo y Menudencias | VACUUM Carnicería',
-    description: 'Consulte la lista de precios mayoristas de achuras, carne porcina (cerdo), menudencias vacunas y cortes especiales de VACUUM Carnicería. Pechito de cerdo, bondiola, vacío, matambre, mollejas y chinchulines directo de frigorífico en Buenos Aires.',
-    keywords: 'lista de precios carnicería, precios mayoristas cerdo, pechito de cerdo precio, bondiola mayorista, vacio de cerdo precio, chorizos de cerdo mayorista, matambre cerdo, precios mayoristas achuras, molleja por mayor precio, chinchulin precio mayorista, vacuum carniceria precios',
+    title: 'Lista de Precios Mayorista | Cortes Vacunos al Vacío, Media Res, Cerdo y Achuras | VACUUM Carnicería',
+    description: 'Precios mayoristas de cortes vacunos al vacío (asado, vacío, lomo, bife de chorizo), media res (novillo, vaquillona, overo), carne porcina, achuras y menudencias. VACUUM Carnicería, directo de frigorífico en Buenos Aires.',
+    keywords: 'cortes vacunos al vacío precio, asado al vacío mayorista, vacío precio, lomo vacuno, bife de chorizo mayorista, media res mayorista precio, media res novillo, media res vaquillona, media res overo, lista de precios carnicería, precios mayoristas cerdo, precios mayoristas achuras, vacuum carniceria precios',
     canonical: 'https://vacuumcarniceria.com.ar/lista-de-precios',
     schema: structuredSchema
   });
@@ -112,14 +112,24 @@ export default function ListaDePrecios() {
           <span className="section-tag">Venta Mayorista Directa</span>
           <h1 className="page-hero-title">Lista de Precios Mayoristas</h1>
           <p className="page-hero-subtitle" style={{ color: 'var(--color-text-muted)', fontSize: '1.05rem', marginTop: '0.6rem', maxWidth: '660px', marginInline: 'auto' }}>
-            Achuras, menudencias vacunas y cortes de carne porcina seleccionados con calidad frigorífica
+            Cortes vacunos al vacío, media res, achuras, menudencias y carne porcina con calidad frigorífica
           </p>
 
           <div className="pricing-hero-actions">
             <a 
+              href="/lista-de-precios-vacunos-vacuum.pdf" 
+              download="Lista_De_Precios_Vacunos_Vacuum.pdf" 
+              className="btn btn-primary"
+              title="Descargar lista oficial de Cortes Vacunos al Vacío en PDF"
+            >
+              <Download size={18} />
+              PDF Vacunos
+            </a>
+
+            <a 
               href="/lista-de-precios-mayorista-vacuum.pdf" 
               download="Lista_De_Precios_Achuras_Vacuum.pdf" 
-              className="btn btn-primary"
+              className="btn btn-outline"
               title="Descargar lista oficial de Achuras en PDF"
             >
               <Download size={18} />
@@ -270,7 +280,13 @@ export default function ListaDePrecios() {
                         <td className="product-name-cell">
                           <div className="product-title-wrap">
                             <strong>{product.nombre}</strong>
+                            {product.tipoAnimal && (
+                              <span className="animal-type-badge">{product.tipoAnimal}</span>
+                            )}
                           </div>
+                          {product.pesoRango && (
+                            <span className="product-peso-rango">Rango: {product.pesoRango}</span>
+                          )}
                           {product.descripcion && (
                             <span className="product-description-sub">{product.descripcion}</span>
                           )}
@@ -328,9 +344,15 @@ export default function ListaDePrecios() {
                   <article key={product.id} className="pricing-card-item">
                     <div className="pricing-card-header">
                       <span className="category-badge">{product.categoria}</span>
+                      {product.tipoAnimal && (
+                        <span className="animal-type-badge">{product.tipoAnimal}</span>
+                      )}
                     </div>
 
                     <h3 className="pricing-card-title">{product.nombre}</h3>
+                    {product.pesoRango && (
+                      <span className="product-peso-rango" style={{ marginBottom: '0.3rem' }}>Rango: {product.pesoRango}</span>
+                    )}
                     <p className="pricing-card-desc">{product.descripcion}</p>
 
                     <div className="pricing-card-footer">
@@ -384,6 +406,14 @@ export default function ListaDePrecios() {
                 >
                   <WhatsAppIcon size={20} color="#ffffff" />
                   Contactar Asesor Mayorista
+                </a>
+                <a 
+                  href="/lista-de-precios-vacunos-vacuum.pdf" 
+                  download="Lista_De_Precios_Vacunos_Vacuum.pdf" 
+                  className="btn btn-outline"
+                >
+                  <Download size={18} />
+                  PDF Vacunos
                 </a>
                 <a 
                   href="/lista-de-precios-mayorista-vacuum.pdf" 
