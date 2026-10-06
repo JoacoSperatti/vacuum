@@ -47,6 +47,16 @@ export default function Footer() {
               </li>
               <li><Link to="/contacto">Contacto</Link></li>
               <li>
+                <a href="/lista-de-precios-actualizada-06-10-2026.pdf" download="Lista_De_Precios_Vacuum_06-10-2026.pdf">
+                  PDF Precios Actualizados (06/10)
+                </a>
+              </li>
+              <li>
+                <a href="/lista-de-precios-pollo-y-promociones-vacuum.pdf" download="Lista_De_Precios_Pollo_Y_Promociones_Vacuum.pdf">
+                  PDF Pollo y Promociones
+                </a>
+              </li>
+              <li>
                 <a href="/lista-de-precios-mayorista-vacuum.pdf" download="Lista_De_Precios_Achuras_Vacuum.pdf">
                   PDF Precios Achuras
                 </a>

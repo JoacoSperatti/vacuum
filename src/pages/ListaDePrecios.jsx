@@ -18,8 +18,8 @@ export default function ListaDePrecios() {
   const structuredSchema = useMemo(() => ({
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    'name': 'Lista de Precios Mayorista de Achuras, Cerdo y Menudencias - VACUUM Carnicería',
-    'description': 'Precios mayoristas oficiales de achuras, carne porcina (cerdo), menudencias vacunas y cortes especiales de VACUUM Carnicería en Buenos Aires.',
+    'name': 'Lista de Precios Mayorista de Carne Vacuna, Pollo, Cerdo, Achuras y Promociones - VACUUM Carnicería',
+    'description': 'Precios oficiales actualizados al 06/10/2026 de cortes vacunos al vacío, pollo y aves, carne porcina (cerdo), achuras, menudencias y promociones de VACUUM Carnicería en Buenos Aires.',
     'numberOfItems': listaPreciosMayoristas.length,
     'itemListElement': listaPreciosMayoristas.map((item, index) => ({
       '@type': 'ListItem',
@@ -59,9 +59,9 @@ export default function ListaDePrecios() {
 
   // SEO Hook
   useSEO({
-    title: 'Lista de Precios Mayorista | Cortes Vacunos al Vacío, Media Res, Cerdo y Achuras | VACUUM Carnicería',
-    description: 'Precios mayoristas de cortes vacunos al vacío (asado, vacío, lomo, bife de chorizo), media res (novillo, vaquillona, overo), carne porcina, achuras y menudencias. VACUUM Carnicería, directo de frigorífico en Buenos Aires.',
-    keywords: 'cortes vacunos al vacío precio, asado al vacío mayorista, vacío precio, lomo vacuno, bife de chorizo mayorista, media res mayorista precio, media res novillo, media res vaquillona, media res overo, lista de precios carnicería, precios mayoristas cerdo, precios mayoristas achuras, vacuum carniceria precios',
+    title: 'Lista de Precios Mayorista | Vacunos al Vacío, Pollo, Cerdo, Achuras y Promociones | VACUUM Carnicería',
+    description: 'Precios mayoristas y minoristas actualizados al 06/10/2026: cortes vacunos al vacío (asado, vacío, lomo), pollo y granja (supremas, pata y muslo), cerdo, achuras y promociones. VACUUM Carnicería, directo de frigorífico en Buenos Aires.',
+    keywords: 'cortes vacunos al vacío precio, asado al vacío mayorista, vacio precio, lomo vacuno, pollo mayorista precio, pata y muslo precio, supremas de pollo precio, cajon de pollo mayorista, promociones carniceria, maple de huevo precio, media res mayorista precio, precios mayoristas cerdo, precios mayoristas achuras, vacuum carniceria precios',
     canonical: 'https://vacuumcarniceria.com.ar/lista-de-precios',
     schema: structuredSchema
   });
@@ -111,19 +111,30 @@ export default function ListaDePrecios() {
         <div className="container">
           <span className="section-tag">Venta Mayorista Directa</span>
           <h1 className="page-hero-title">Lista de Precios Mayoristas</h1>
-          <p className="page-hero-subtitle" style={{ color: 'var(--color-text-muted)', fontSize: '1.05rem', marginTop: '0.6rem', maxWidth: '660px', marginInline: 'auto' }}>
-            Cortes vacunos al vacío, media res, achuras, menudencias y carne porcina con calidad frigorífica
+          <p className="page-hero-subtitle" style={{ color: 'var(--color-text-muted)', fontSize: '1.05rem', marginTop: '0.6rem', maxWidth: '720px', marginInline: 'auto' }}>
+            Cortes vacunos al vacío, pollo y aves, promociones, media res, achuras y carne porcina con calidad frigorífica
           </p>
 
           <div className="pricing-hero-actions">
             <a 
-              href="/lista-de-precios-vacunos-vacuum.pdf" 
-              download="Lista_De_Precios_Vacunos_Vacuum.pdf" 
+              href="/lista-de-precios-actualizada-06-10-2026.pdf" 
+              download="Lista_De_Precios_Vacuum_06-10-2026.pdf" 
               className="btn btn-primary"
-              title="Descargar lista oficial de Cortes Vacunos al Vacío en PDF"
+              title="Descargar lista oficial de precios actualizada al 06/10/2026 en PDF"
             >
               <Download size={18} />
-              PDF Vacunos
+              PDF Actualizado 06/10
+            </a>
+
+
+            <a 
+              href="/lista-de-precios-pollo-y-promociones-vacuum.pdf" 
+              download="Lista_De_Precios_Pollo_Y_Promociones_Vacuum.pdf" 
+              className="btn btn-outline"
+              title="Descargar lista de Pollo, Aves y Promociones en PDF"
+            >
+              <Download size={18} />
+              PDF Pollo & Promos
             </a>
 
             <a 
@@ -172,7 +183,7 @@ export default function ListaDePrecios() {
                 <Search size={18} className="search-icon" />
                 <input
                   type="text"
-                  placeholder="Buscar achura, cerdo, corte o menudencia (ej. Bondiola, Pechito, Molleja)..."
+                  placeholder="Buscar corte vacuno, pollo, promo, cerdo o achura (ej. Asado, Pata y muslo, Maple)..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                   className="search-input"
@@ -257,7 +268,7 @@ export default function ListaDePrecios() {
               {selectedCategory !== 'Todos' && ` en "${selectedCategory}"`}
               {searchTerm && ` para "${searchTerm}"`}
             </p>
-            <span className="last-update-tag">Precios Mayoristas Vigentes</span>
+            <span className="last-update-tag">Precios Vigentes · Actualizado 06/10/2026</span>
           </div>
 
           {/* Table View */}
@@ -266,7 +277,7 @@ export default function ListaDePrecios() {
               <table className="pricing-table">
                 <thead>
                   <tr>
-                    <th scope="col" style={{ minWidth: '220px' }}>Artículo / Menudencia</th>
+                    <th scope="col" style={{ minWidth: '220px' }}>Artículo / Producto</th>
                     <th scope="col">Categoría</th>
                     <th scope="col" className="text-center">Unidad</th>
                     <th scope="col" className="text-right">Precio Mayorista</th>
@@ -408,12 +419,20 @@ export default function ListaDePrecios() {
                   Contactar Asesor Mayorista
                 </a>
                 <a 
-                  href="/lista-de-precios-vacunos-vacuum.pdf" 
-                  download="Lista_De_Precios_Vacunos_Vacuum.pdf" 
+                  href="/lista-de-precios-actualizada-06-10-2026.pdf" 
+                  download="Lista_De_Precios_Vacuum_06-10-2026.pdf" 
+                  className="btn btn-primary"
+                >
+                  <Download size={18} />
+                  PDF Actualizado 06/10
+                </a>
+                <a 
+                  href="/lista-de-precios-pollo-y-promociones-vacuum.pdf" 
+                  download="Lista_De_Precios_Pollo_Y_Promociones_Vacuum.pdf" 
                   className="btn btn-outline"
                 >
                   <Download size={18} />
-                  PDF Vacunos
+                  PDF Pollo & Promos
                 </a>
                 <a 
                   href="/lista-de-precios-mayorista-vacuum.pdf" 

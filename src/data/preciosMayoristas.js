@@ -1,6 +1,7 @@
 /**
  * Lista de Precios Mayoristas - VACUUM Carnicería
- * Datos extraídos fielmente del documento oficial de precios de achuras y menudencias.
+ * Datos extraídos fielmente de los documentos oficiales de precios:
+ * Cortes Vacunos al Vacío, Pollo y Aves, Cerdo, Achuras, Menudencias y Promociones (Actualizado 06/10/2026).
  */
 
 export const listaPreciosMayoristas = [
@@ -332,7 +333,7 @@ export const listaPreciosMayoristas = [
   {
     id: 'asado',
     nombre: 'Asado',
-    precio: 13990,
+    precio: 14000,
     unidad: 'kg',
     categoria: 'Cortes Vacunos al Vacío',
     descripcion: 'Asado vacuno envasado al vacío, el corte insignia de la parrilla argentina.',
@@ -340,15 +341,23 @@ export const listaPreciosMayoristas = [
   {
     id: 'asado-banderita',
     nombre: 'Asado banderita',
-    precio: 13990,
+    precio: 14000,
     unidad: 'kg',
     categoria: 'Cortes Vacunos al Vacío',
     descripcion: 'Asado banderita al vacío, costillas cortas ideales para parrilla y horno.',
   },
   {
+    id: 'asado-americano',
+    nombre: 'Asado americano',
+    precio: 14000,
+    unidad: 'kg',
+    categoria: 'Cortes Vacunos al Vacío',
+    descripcion: 'Corte transversal de asado con hueso tierno y sabroso, cocción rápida a las brasas.',
+  },
+  {
     id: 'vacio',
     nombre: 'Vacío',
-    precio: 16900,
+    precio: 18000,
     unidad: 'kg',
     categoria: 'Cortes Vacunos al Vacío',
     descripcion: 'Vacío vacuno al vacío, corte premium jugoso y tierno, estrella de la parrilla.',
@@ -356,7 +365,7 @@ export const listaPreciosMayoristas = [
   {
     id: 'matambre-vacuno',
     nombre: 'Matambre',
-    precio: 13990,
+    precio: 18000,
     unidad: 'kg',
     categoria: 'Cortes Vacunos al Vacío',
     descripcion: 'Matambre vacuno al vacío, fino y versátil para relleno, parrilla o tiernizado.',
@@ -364,7 +373,7 @@ export const listaPreciosMayoristas = [
   {
     id: 'entrana',
     nombre: 'Entraña',
-    precio: 13990,
+    precio: 18000,
     unidad: 'kg',
     categoria: 'Cortes Vacunos al Vacío',
     descripcion: 'Entraña vacuna al vacío, corte de fibra marcada con sabor intenso a las brasas.',
@@ -372,7 +381,7 @@ export const listaPreciosMayoristas = [
   {
     id: 'tapa-de-asado',
     nombre: 'Tapa de asado',
-    precio: 13990,
+    precio: 14000,
     unidad: 'kg',
     categoria: 'Cortes Vacunos al Vacío',
     descripcion: 'Tapa de asado al vacío, corte económico con buena cobertura de grasa para parrilla.',
@@ -380,7 +389,7 @@ export const listaPreciosMayoristas = [
   {
     id: 'roast-beef',
     nombre: 'Roast beef',
-    precio: 13990,
+    precio: 14000,
     unidad: 'kg',
     categoria: 'Cortes Vacunos al Vacío',
     descripcion: 'Roast beef al vacío, ideal para horno, mechado o bifes gruesos.',
@@ -388,7 +397,7 @@ export const listaPreciosMayoristas = [
   {
     id: 'paleta',
     nombre: 'Paleta',
-    precio: 13990,
+    precio: 14000,
     unidad: 'kg',
     categoria: 'Cortes Vacunos al Vacío',
     descripcion: 'Paleta vacuna al vacío, corte rendidor y sabroso para guisados y estofados.',
@@ -396,7 +405,7 @@ export const listaPreciosMayoristas = [
   {
     id: 'palomita',
     nombre: 'Palomita',
-    precio: 13990,
+    precio: 14000,
     unidad: 'kg',
     categoria: 'Cortes Vacunos al Vacío',
     descripcion: 'Palomita de paleta al vacío, corte magro y tierno para milanesas y escalopes.',
@@ -404,7 +413,7 @@ export const listaPreciosMayoristas = [
   {
     id: 'bola-de-lomo',
     nombre: 'Bola de lomo',
-    precio: 13990,
+    precio: 14000,
     unidad: 'kg',
     categoria: 'Cortes Vacunos al Vacío',
     descripcion: 'Bola de lomo al vacío, corte redondo y magro ideal para milanesas y bifes.',
@@ -412,7 +421,7 @@ export const listaPreciosMayoristas = [
   {
     id: 'cuadrada',
     nombre: 'Cuadrada',
-    precio: 13990,
+    precio: 14000,
     unidad: 'kg',
     categoria: 'Cortes Vacunos al Vacío',
     descripcion: 'Cuadrada vacuna al vacío, corte magro y parejo para milanesas y preparaciones rápidas.',
@@ -420,7 +429,7 @@ export const listaPreciosMayoristas = [
   {
     id: 'cuadril',
     nombre: 'Cuadril',
-    precio: 13990,
+    precio: 18000,
     unidad: 'kg',
     categoria: 'Cortes Vacunos al Vacío',
     descripcion: 'Cuadril al vacío, corte de primera para parrilla, bifes y plancha.',
@@ -428,7 +437,7 @@ export const listaPreciosMayoristas = [
   {
     id: 'colita-de-cuadril',
     nombre: 'Colita de cuadril',
-    precio: 13990,
+    precio: 18000,
     unidad: 'kg',
     categoria: 'Cortes Vacunos al Vacío',
     descripcion: 'Colita de cuadril al vacío, corte pequeño y tierno ideal para horno o parrilla.',
@@ -436,7 +445,7 @@ export const listaPreciosMayoristas = [
   {
     id: 'nalga',
     nombre: 'Nalga',
-    precio: 16900,
+    precio: 18000,
     unidad: 'kg',
     categoria: 'Cortes Vacunos al Vacío',
     descripcion: 'Nalga vacuna al vacío, corte magro y grande para milanesas, bifes y carnes al horno.',
@@ -444,7 +453,7 @@ export const listaPreciosMayoristas = [
   {
     id: 'peceto',
     nombre: 'Peceto',
-    precio: 13990,
+    precio: 18000,
     unidad: 'kg',
     categoria: 'Cortes Vacunos al Vacío',
     descripcion: 'Peceto al vacío, corte cilíndrico y magro, perfecto para matambre relleno y carne mechada.',
@@ -452,7 +461,7 @@ export const listaPreciosMayoristas = [
   {
     id: 'lomo',
     nombre: 'Lomo',
-    precio: 17900,
+    precio: 18000,
     unidad: 'kg',
     categoria: 'Cortes Vacunos al Vacío',
     descripcion: 'Lomo vacuno al vacío, el corte más tierno y premium, ideal para medallones y parrilla.',
@@ -460,7 +469,7 @@ export const listaPreciosMayoristas = [
   {
     id: 'tortuguita',
     nombre: 'Tortuguita',
-    precio: 13990,
+    precio: 14000,
     unidad: 'kg',
     categoria: 'Cortes Vacunos al Vacío',
     descripcion: 'Tortuguita al vacío, corte rendidor del cuarto trasero para guisados y estofados.',
@@ -468,7 +477,7 @@ export const listaPreciosMayoristas = [
   {
     id: 'osobuco',
     nombre: 'Osobuco',
-    precio: 13990,
+    precio: 7500,
     unidad: 'kg',
     categoria: 'Cortes Vacunos al Vacío',
     descripcion: 'Osobuco vacuno al vacío, corte con hueso y médula para cocciones lentas y caldos.',
@@ -476,7 +485,7 @@ export const listaPreciosMayoristas = [
   {
     id: 'carnaza-roast-beef',
     nombre: 'Carnaza de roast beef',
-    precio: 13990,
+    precio: 14000,
     unidad: 'kg',
     categoria: 'Cortes Vacunos al Vacío',
     descripcion: 'Carnaza de roast beef al vacío, corte magro del cuarto trasero para guisos y mechados.',
@@ -484,7 +493,7 @@ export const listaPreciosMayoristas = [
   {
     id: 'carnaza-paleta',
     nombre: 'Carnaza de paleta',
-    precio: 13990,
+    precio: 14000,
     unidad: 'kg',
     categoria: 'Cortes Vacunos al Vacío',
     descripcion: 'Carnaza de paleta al vacío, corte rendidor y sabroso para estofados y carne picada.',
@@ -492,7 +501,7 @@ export const listaPreciosMayoristas = [
   {
     id: 'falda',
     nombre: 'Falda',
-    precio: 13990,
+    precio: 10000,
     unidad: 'kg',
     categoria: 'Cortes Vacunos al Vacío',
     descripcion: 'Falda vacuna al vacío, corte con grasa justa ideal para puchero, guiso y parrilla lenta.',
@@ -500,7 +509,7 @@ export const listaPreciosMayoristas = [
   {
     id: 'aguja',
     nombre: 'Aguja',
-    precio: 13990,
+    precio: 14000,
     unidad: 'kg',
     categoria: 'Cortes Vacunos al Vacío',
     descripcion: 'Aguja vacuna al vacío, corte con marmoleado y sabor intenso para parrilla y bifes.',
@@ -508,7 +517,7 @@ export const listaPreciosMayoristas = [
   {
     id: 'marucha',
     nombre: 'Marucha',
-    precio: 13990,
+    precio: 14000,
     unidad: 'kg',
     categoria: 'Cortes Vacunos al Vacío',
     descripcion: 'Marucha al vacío, corte de la paleta ideal para guisos, estofados y carne al horno.',
@@ -516,7 +525,7 @@ export const listaPreciosMayoristas = [
   {
     id: 'tapa-de-cuadril',
     nombre: 'Tapa de cuadril',
-    precio: 13990,
+    precio: 18000,
     unidad: 'kg',
     categoria: 'Cortes Vacunos al Vacío',
     descripcion: 'Tapa de cuadril al vacío, corte delgado y tierno para parrilla rápida y plancha.',
@@ -524,7 +533,7 @@ export const listaPreciosMayoristas = [
   {
     id: 'bife-de-chorizo',
     nombre: 'Bife de chorizo',
-    precio: 13990,
+    precio: 18000,
     unidad: 'kg',
     categoria: 'Cortes Vacunos al Vacío',
     descripcion: 'Bife de chorizo al vacío, el clásico corte grueso y jugoso de la parrilla argentina.',
@@ -532,7 +541,7 @@ export const listaPreciosMayoristas = [
   {
     id: 'ojo-de-bife',
     nombre: 'Ojo de bife',
-    precio: 13990,
+    precio: 18000,
     unidad: 'kg',
     categoria: 'Cortes Vacunos al Vacío',
     descripcion: 'Ojo de bife al vacío, corte premium con veta de grasa central, máximo sabor a la parrilla.',
@@ -540,7 +549,7 @@ export const listaPreciosMayoristas = [
   {
     id: 'bife-angosto',
     nombre: 'Bife angosto',
-    precio: 13990,
+    precio: 14000,
     unidad: 'kg',
     categoria: 'Cortes Vacunos al Vacío',
     descripcion: 'Bife angosto al vacío, corte magro y tierno ideal para plancha y parrilla rápida.',
@@ -548,7 +557,7 @@ export const listaPreciosMayoristas = [
   {
     id: 'bife-ancho',
     nombre: 'Bife ancho',
-    precio: 13990,
+    precio: 14000,
     unidad: 'kg',
     categoria: 'Cortes Vacunos al Vacío',
     descripcion: 'Bife ancho al vacío, corte con hueso y grasa de cobertura para parrilla gourmet.',
@@ -556,26 +565,161 @@ export const listaPreciosMayoristas = [
   {
     id: 'tapa-de-nalga',
     nombre: 'Tapa de nalga',
-    precio: 13990,
+    precio: 18000,
     unidad: 'kg',
     categoria: 'Cortes Vacunos al Vacío',
     descripcion: 'Tapa de nalga al vacío, corte delgado y magro ideal para milanesas y bifes finos.',
   },
   {
+    id: 'bife-con-lomo',
+    nombre: 'Bife con lomo',
+    precio: null,
+    unidad: 'kg',
+    categoria: 'Cortes Vacunos al Vacío',
+    descripcion: 'Bife con lomo seleccionado al vacío, terneza superior combinando lomo y bife de chorizo.',
+    nota: 'Consultar disponibilidad',
+  },
+  {
+    id: 'picada-especial',
+    nombre: 'Picada especial (por kg)',
+    precio: 14000,
+    unidad: 'kg',
+    categoria: 'Cortes Vacunos al Vacío',
+    descripcion: 'Carne picada especial vacuna magra y fresca seleccionada, máximo rendimiento.',
+  },
+  {
     id: 'bife-de-vacio',
     nombre: 'Bife de vacío',
-    precio: 13990,
+    precio: 18000,
     unidad: 'kg',
     categoria: 'Cortes Vacunos al Vacío',
     descripcion: 'Bife de vacío al vacío, corte jugoso con grasa justa, excelente a la parrilla o plancha.',
+  },
+
+  // ── Pollo y Aves ─────────────────────────────────────────────────
+  {
+    id: 'pata-y-muslo-kg',
+    nombre: 'Pata y muslo (por kg)',
+    precio: 5000,
+    unidad: 'kg',
+    categoria: 'Pollo y Aves',
+    descripcion: 'Pata y muslo fresca de pollo seleccionada por kilogramo, jugosa y rendidora para horno o parrilla.',
+  },
+  {
+    id: 'supremas-kg',
+    nombre: 'Supremas (por kg)',
+    precio: 10000,
+    unidad: 'kg',
+    categoria: 'Pollo y Aves',
+    descripcion: 'Supremas de pechuga de pollo desgrasadas y sin piel por kilogramo, 100% carne blanca magra.',
+  },
+  {
+    id: 'milanesas-pollo-kg',
+    nombre: 'Milanesas de pollo (por kg)',
+    precio: 7500,
+    unidad: 'kg',
+    categoria: 'Pollo y Aves',
+    descripcion: 'Milanesas de pollo frescas rebozadas listas para cocinar al horno o fritas, crocantes y tiernas.',
+  },
+  {
+    id: 'capon-kg',
+    nombre: 'Capón (por kg)',
+    precio: 4200,
+    unidad: 'kg',
+    categoria: 'Pollo y Aves',
+    descripcion: 'Capón seleccionado fresco por kilogramo, carne con excelente terneza y sabor.',
+  },
+  {
+    id: 'pata-y-muslo-3kg',
+    nombre: 'Pata y muslo (3 kg)',
+    precio: 12000,
+    unidad: '3 kg',
+    categoria: 'Pollo y Aves',
+    descripcion: 'Pack ahorro de pata y muslo fresca x 3 kg, ideal para familias y comercios gastronómicos.',
+  },
+  {
+    id: 'alitas-3kg',
+    nombre: 'Alitas (3 kg)',
+    precio: 10000,
+    unidad: '3 kg',
+    categoria: 'Pollo y Aves',
+    descripcion: 'Alitas de pollo frescas en pack de 3 kg, perfectas para dorar crocantes a la parrilla o al horno.',
+  },
+  {
+    id: 'hamburguesas-pollo-2kg',
+    nombre: 'Hamburguesas de pollo (2 kg)',
+    precio: 17000,
+    unidad: '2 kg',
+    categoria: 'Pollo y Aves',
+    descripcion: 'Hamburguesas caseras de pollo en pack de 2 kg, prácticas, nutritivas y de cocción rápida.',
+  },
+  {
+    id: 'pollo-entero-kg',
+    nombre: 'Pollo entero (por kg)',
+    precio: 4500,
+    unidad: 'kg',
+    categoria: 'Pollo y Aves',
+    descripcion: 'Pollo fresco entero eviscerado por kilogramo, criado bajo estrictas normas de calidad frigorífica.',
+  },
+  {
+    id: 'cajon-pollo',
+    nombre: 'Cajón de pollo (6/7 cabezas)',
+    precio: 63000,
+    unidad: 'cajón',
+    categoria: 'Pollo y Aves',
+    descripcion: 'Cajón mayorista de pollo de 6 a 7 cabezas seleccionado, ideal para rotiserías, restaurantes y carnicerías.',
+  },
+  {
+    id: 'churrasquito-pollo-kg',
+    nombre: 'Churrasquito de pollo (por kg)',
+    precio: 10000,
+    unidad: 'kg',
+    categoria: 'Pollo y Aves',
+    descripcion: 'Churrasquitos de pata y muslo desossados por kilogramo, jugosos y de preparación rápida a la plancha.',
+  },
+  {
+    id: 'menudo-pollo-kg',
+    nombre: 'Menudo de pollo (por kg)',
+    precio: 3000,
+    unidad: 'kg',
+    categoria: 'Pollo y Aves',
+    descripcion: 'Menudos frescos de pollo por kilogramo, seleccionados para caldos, sopas y salsas caseras.',
+  },
+
+  // ── Otros / Promociones ──────────────────────────────────────────
+  {
+    id: 'hamburguesas-carne-2kg',
+    nombre: 'Hamburguesas de carne (2 kg)',
+    precio: 18000,
+    unidad: '2 kg',
+    categoria: 'Otros / Promociones',
+    descripcion: 'Hamburguesas de carne vacuna seleccionada en pack familiar x 2 kg, jugosas y listas para cocinar.',
+  },
+  {
+    id: 'maple-huevo-n1',
+    nombre: 'Maple de huevo N.º 1',
+    precio: 5900,
+    unidad: 'maple',
+    categoria: 'Otros / Promociones',
+    descripcion: 'Maple de 30 huevos frescos seleccionados N.º 1 de granja de primera calidad.',
+  },
+  {
+    id: 'picada-promocion-kg',
+    nombre: 'Picada promoción (por kg)',
+    precio: 10500,
+    unidad: 'kg',
+    categoria: 'Otros / Promociones',
+    descripcion: 'Carne picada en promoción especial por kilogramo, rinde para empanadas, pasteles y salsas.',
   },
 ];
 
 export const categoriasPrecios = [
   'Todos',
   'Cortes Vacunos al Vacío',
-  'Media Res Mayorista',
+  'Pollo y Aves',
+  'Otros / Promociones',
   'Carne Porcina',
+  'Media Res Mayorista',
   'Achuras Clásicas',
   'Cortes Especiales',
   'Menudencias Vacunas',

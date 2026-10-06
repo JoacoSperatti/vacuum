@@ -144,15 +144,31 @@ export default function NuestrasCarnes() {
           <div className="pricing-cta-banner">
             <div className="cta-banner-content">
               <span className="section-tag">Venta Mayorista & Gastronomía</span>
-              <h2>¿Busca achuras, carne porcina y cortes por volumen?</h2>
+              <h2>¿Busca vacunos, pollo, cerdo y achuras por volumen?</h2>
               <p>
-                Acceda a nuestra lista de precios mayorista: cortes de cerdo, mollejas, chinchulín, lengua, bondiola, vacío de cerdo y especialidades con logística garantizada.
+                Acceda a nuestra lista de precios actualizada: cortes vacunos al vacío, pollo y aves, cerdo, achuras y promociones con logística garantizada.
               </p>
               <div className="cta-buttons-wrap">
                 <Link to="/lista-de-precios" className="btn btn-primary">
                   <FileText size={18} />
-                  Ver Lista de Precios Mayorista
+                  Ver Lista de Precios
                 </Link>
+                <a 
+                  href="/lista-de-precios-actualizada-06-10-2026.pdf" 
+                  download="Lista_De_Precios_Vacuum_06-10-2026.pdf"
+                  className="btn btn-outline"
+                >
+                  <Download size={18} />
+                  PDF Actualizado 06/10
+                </a>
+                <a 
+                  href="/lista-de-precios-pollo-y-promociones-vacuum.pdf" 
+                  download="Lista_De_Precios_Pollo_Y_Promociones_Vacuum.pdf" 
+                  className="btn btn-outline"
+                >
+                  <Download size={18} />
+                  PDF Pollo & Promos
+                </a>
                 <a 
                   href="/lista-de-precios-mayorista-vacuum.pdf" 
                   download="Lista_De_Precios_Achuras_Vacuum.pdf"

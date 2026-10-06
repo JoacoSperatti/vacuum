@@ -158,14 +158,30 @@ export default function Inicio() {
           <div className="pricing-cta-banner">
             <div className="cta-banner-content">
               <span className="section-tag">Venta Mayorista Directa</span>
-              <h2>¿Busca Achuras, Cerdo y Cortes al por Mayor?</h2>
+              <h2>¿Busca Cortes Vacunos, Pollo, Cerdo o Achuras al por Mayor?</h2>
               <p>
-                Disponemos de lista de precios mayorista actualizada para restaurantes, parrillas, carnicerías y eventos. Cortes de cerdo, achuras vacunas, mollejas, bondiola y especialidades con entrega en toda la zona.
+                Disponemos de lista de precios mayorista actualizada para restaurantes, parrillas, carnicerías y eventos. Cortes vacunos al vacío, pollo y aves, cerdo, achuras vacunas, mollejas y promociones con entrega en toda la zona.
               </p>
               <div className="cta-buttons-wrap">
                 <Link to="/lista-de-precios" className="btn btn-primary">
                   Consultar Precios Online
                 </Link>
+                <a 
+                  href="/lista-de-precios-actualizada-06-10-2026.pdf" 
+                  download="Lista_De_Precios_Vacuum_06-10-2026.pdf"
+                  className="btn btn-outline"
+                >
+                  <Download size={18} />
+                  PDF Actualizado 06/10
+                </a>
+                <a 
+                  href="/lista-de-precios-pollo-y-promociones-vacuum.pdf" 
+                  download="Lista_De_Precios_Pollo_Y_Promociones_Vacuum.pdf" 
+                  className="btn btn-outline"
+                >
+                  <Download size={18} />
+                  PDF Pollo & Promos
+                </a>
                 <a 
                   href="/lista-de-precios-mayorista-vacuum.pdf" 
                   download="Lista_De_Precios_Achuras_Vacuum.pdf"
